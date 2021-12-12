@@ -1,7 +1,8 @@
-import { PrimaryButton } from "./components/atoms/button/PrimatyButton";
+import { PrimaryButton } from "./components/atoms/button/PrimaryButton";
 import { SecondaryButton } from "./components/atoms/button/SecondaryButton";
 import { SearchInput } from "./components/molecules/SearchInput";
 import { UserCard } from "./components/organisms/user/UserCard";
+import { Router } from "./router/Router";
 import "./styles.css";
 
 const user = {
@@ -17,11 +18,12 @@ const user = {
 
 export default function App() {
   return (
-    <div className="App">
-      <PrimaryButton>テスト</PrimaryButton>
-      <PrimaryButton>検索</PrimaryButton>
-      <SearchInput />
-      <UserCard user={user} />
-    </div>
+      <Router />
+    // <div className="App">
+    //   <PrimaryButton>テスト</PrimaryButton>
+    //   <PrimaryButton>検索</PrimaryButton>
+    //   <SearchInput />
+    //   <UserCard user={user} />
+    // </div>
   );
 }

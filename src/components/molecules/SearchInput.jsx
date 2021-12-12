@@ -1,4 +1,4 @@
-import { PrimaryButton } from "../atoms/button/PrimatyButton";
+import { PrimaryButton } from "../atoms/button/PrimaryButton";
 import { Input } from "../atoms/input/Input";
 
 export const SearchInput = () => {

@@ -1,9 +1,15 @@
+import styled from "styled-components"
+
 export const UserIconWithName = (props) => {
   const { image, name } = props;
   return (
-    <div>
+    <SIcon>
       <img height={160} src={image} alt={name} />
       <p>{name}</p>
-    </div>
+    </SIcon>
   );
 };
+
+const SIcon = styled.div`
+  text-align: left;
+`

@@ -9,9 +9,11 @@ export const Router = () => {
     <BrowserRouter>
       <Switch>
         <Route exact path="/">
+        <HeaderOnly>
           {/* <DefaultLayout> */}
-          <Top />
+            <Top />
           {/* </DefaultLayout> */}
+        </HeaderOnly>
         </Route>
         <Route path="/users">
           <HeaderOnly>
